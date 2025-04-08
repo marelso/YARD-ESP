@@ -8,7 +8,6 @@ class SwitchComponent {
         int pin;
 
         void turnOn() {
-            Serial.begin(115200);
             Serial.printf("turning on pin %d \n", this->pin);
 
             digitalWrite(this->pin, HIGH);
