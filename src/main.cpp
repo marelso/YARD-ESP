@@ -1,20 +1,14 @@
 #include <Arduino.h>
+#include "components/SwitchComponent.h"
 
-#define LED_PIN 2
-
-// put function declarations here:
-int myFunction(int, int);
+SwitchComponent led(2);
 
 void setup() {
-  pinMode(LED_PIN, OUTPUT);
-  int result = myFunction(2, 3);
+  
 }
 
 void loop() {
-  
-  digitalWrite(LED_PIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_PIN, LOW);
+  led.toggle();
   delay(1000);
 
 }
